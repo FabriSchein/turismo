@@ -1,0 +1,150 @@
+body {
+    background-image: url('./img/fondocontacto.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    src: url(./fonts/Roboto-Regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'louis-cafe';
+    src: url(./fonts/louis-cafe.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'DMsans';
+    src: url(./fonts/DMsans.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul{
+    display: flex;
+    margin-left: 30px;
+}
+
+.menu ul li{
+    color: white;
+    margin-top: 34px;
+    font-family: 'louis-cafe';
+    margin-right: 40px;
+    list-style: none;
+
+}
+
+.menu ul li a{
+    -webkit-transition: 0.3s;
+}
+
+.menu ul li a:hover{
+    color:rgb(255, 166, 0);
+    font-size: 20px;
+    
+}
+
+.logo{
+    margin-right: 30px;
+    margin-top: 22px;
+
+}
+
+  *{
+    padding: 0;
+    margin: 0;
+  }
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.0));
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.7s;
+    z-index: 10;
+}
+
+header.abajo{
+    padding-top: 3px;
+    padding-bottom: 20px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.0));
+}
+  
+  .container {
+    width: 1200px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: grid;
+    gap: 20px;
+  }
+  
+  label {
+    display: block;
+    font-size: 18px;
+  }
+  
+  input,
+  textarea {
+
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff3103;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+  }
+  
+  button:hover {
+    transition: .5s;
+    background-color: #ff0000;
+  }
+  
+    @media screen and (max-width: 768px) {
+        .container {
+        padding: 20px;
+        }
+    }
+  

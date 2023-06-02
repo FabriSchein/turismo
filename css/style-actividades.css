@@ -1,0 +1,159 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos del encabezado */
+  @font-face {
+    font-family: 'Roboto';
+    src: url(./fonts/Roboto-Regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'louis-cafe';
+    src: url(./fonts/louis-cafe.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'DMsans';
+    src: url(./fonts/DMsans.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul{
+    display: flex;
+    margin-left: 30px;
+}
+
+.menu ul li{
+    color: white;
+    margin-top: 34px;
+    font-family: 'louis-cafe';
+    margin-right: 40px;
+    list-style: none;
+
+}
+
+.menu ul li a{
+    -webkit-transition: 0.3s;
+}
+
+.menu ul li a:hover{
+    color:rgb(255, 166, 0);
+    font-size: 20px;
+    
+}
+
+
+  *{
+    padding: 0;
+    margin: 0;
+  }
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 35px;
+    background-color: rgb(12, 12, 12);  
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.7s;
+    z-index: 10;
+}
+
+header.abajo{
+    padding-top: 3px;
+    padding-bottom: 20px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.0));
+} 
+  
+  /* Estilos de la sección de inicio */
+  #inicio {
+    background-color: #f2f2f2;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  #inicio h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #inicio p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+  #inicio .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  /* Estilos de la sección de atracciones */
+  #atracciones {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  #atracciones h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  
+  .atraccion {
+    margin-bottom: 40px;
+  }
+  
+  .atraccion img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .atraccion h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .atraccion p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .atraccion .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  /* Estilos del pie de página */
+  footer {
+    background-color: #333;
+    padding: 40px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  footer .contacto h3, footer .redes-sociales h3 {
+  
