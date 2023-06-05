@@ -1,159 +1,201 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Estilos del encabezado */
-  @font-face {
-    font-family: 'Roboto';
-    src: url(./fonts/Roboto-Regular.ttf);
-    font-style: normal;
-    font-weight: normal;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos del encabezado */
+@font-face {
+  font-family: 'Roboto';
+  src: url(./fonts/Roboto-Regular.ttf);
+  font-style: normal;
+  font-weight: normal;
 }
 
 @font-face {
-    font-family: 'louis-cafe';
-    src: url(./fonts/louis-cafe.ttf);
-    font-style: normal;
-    font-weight: normal;
+  font-family: 'louis-cafe';
+  src: url(./fonts/louis-cafe.ttf);
+  font-style: normal;
+  font-weight: normal;
 }
 
 @font-face {
-    font-family: 'DMsans';
-    src: url(./fonts/DMsans.ttf);
-    font-style: normal;
-    font-weight: normal;
+  font-family: 'DMsans';
+  src: url(./fonts/DMsans.ttf);
+  font-style: normal;
+  font-weight: normal;
 }
 
 a{
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .menu ul{
-    display: flex;
-    margin-left: 30px;
+  display: flex;
+  margin-left: 30px;
 }
 
 .menu ul li{
-    color: white;
-    margin-top: 34px;
-    font-family: 'louis-cafe';
-    margin-right: 40px;
-    list-style: none;
+  color: white;
+  margin-top: 34px;
+  font-family: 'louis-cafe';
+  margin-right: 40px;
+  list-style: none;
 
 }
 
 .menu ul li a{
-    -webkit-transition: 0.3s;
+  -webkit-transition: 0.3s;
 }
 
 .menu ul li a:hover{
-    color:rgb(255, 166, 0);
-    font-size: 20px;
-    
+  color:rgb(255, 166, 0);
+  font-size: 20px;
+  
 }
 
 
-  *{
-    padding: 0;
-    margin: 0;
-  }
+*{
+  padding: 0;
+  margin: 0;
+}
 
-  header{
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 35px;
-    background-color: rgb(12, 12, 12);  
-    top: 0;
-    left: 0;
-    width: 100%;
-    transition: 0.7s;
-    z-index: 10;
+header{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 35px;
+  background-color: rgb(12, 12, 12);  
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.7s;
+  z-index: 10;
 }
 
 header.abajo{
-    padding-top: 3px;
-    padding-bottom: 20px;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.0));
+  padding-top: 3px;
+  padding-bottom: 20px;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.0));
 } 
-  
-  /* Estilos de la sección de inicio */
-  #inicio {
-    background-color: #f2f2f2;
-    padding: 40px;
-    text-align: center;
-  }
-  
-  #inicio h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  #inicio p {
-    font-size: 18px;
-    margin-bottom: 40px;
-  }
-  
-  #inicio .btn {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  /* Estilos de la sección de atracciones */
-  #atracciones {
-    background-color: #fff;
-    padding: 40px;
-    text-align: center;
-  }
-  
-  #atracciones h2 {
-    font-size: 32px;
-    margin-bottom: 40px;
-  }
-  
-  .atraccion {
-    margin-bottom: 40px;
-  }
-  
-  .atraccion img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    margin-bottom: 20px;
-  }
-  
-  .atraccion h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .atraccion p {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-  
-  .atraccion .btn {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  /* Estilos del pie de página */
-  footer {
-    background-color: #333;
-    padding: 40px;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  footer .contacto h3, footer .redes-sociales h3 {
-  
+
+/* Estilos de la sección de inicio */
+#inicio {
+  background-color: #f2f2f2;
+  padding: 40px;
+  text-align: center;
+}
+
+#inicio h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#inicio p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+
+#inicio .btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Estilos de la sección de atracciones */
+#atracciones {
+  background-color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+#atracciones h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.atraccion {
+  margin-bottom: 40px;
+}
+
+.atraccion img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.atraccion h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.atraccion p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.atraccion .btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Estilos del pie de página */
+.redes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.redes ul li{
+  display: inline-block;
+  margin-left: 0 5px;
+  width: 105px;
+  height: 50px;
+  text-align: center;
+}
+
+.redes ul li a{
+  padding: 5px 8px 5px;
+  background: #333;
+  color: #fff;
+  line-height: 50px;
+  font-size: 18px;
+  box-shadow: 0 3px 5px 0px rgba(0, 0, 0,.2);
+  transition: .2s;
+}
+
+
+.redes ul li a:hover{
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0,.4);
+  filter: none;
+}
+.redes ul li .instagram:hover{
+  background: hsl(335, 93%, 72%);
+}
+.redes ul li .whatsapp:hover{
+  background: green;
+}
+.redes ul li .correo:hover{
+  background: red;
+}
+
+.redes ul li .twitter:hover{
+  background: #55acee;
+}
+
+.abajo {
+  width: 100%;
+  background: black;
+  left: 0;
+  position: fixed;
+  bottom: 0 ;
+} 
