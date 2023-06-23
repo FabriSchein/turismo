@@ -101,7 +101,7 @@ body{
 }
 
 .menu ul li a:hover{
-    color:rgb(255, 166, 0);
+    color: 
     font-size: 20px;
     
 }
@@ -123,7 +123,6 @@ video {
 
 footer{
     background-color: #FF9100;
-    padding-left: 15%;
     width: 100%;
 }
 
