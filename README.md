@@ -1,4 +1,3 @@
-# turismo
-app para turismo de Villa Carlos Paz
-## Vamos de nuevo 
-## hola soy bocha 
+## Continuar con la pagina 
+## Seguir con las bases de datos
+## Seguir con JS
