@@ -30,7 +30,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding-bottom: 50px;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.0));
+    background-color: aliceblue;
     position: fixed;
     top: 0;
     left: 0;
@@ -41,7 +41,7 @@ header{
 
 a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 
@@ -49,7 +49,6 @@ header.abajo{
 
     padding-top: 3px;
     padding-bottom: 20px;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.0));
 }
 
 
@@ -84,8 +83,95 @@ header.abajo{
 }
 
 body{
-    background-image: url(../img/restaurantes/paz.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     backdrop-filter: blur(25px);
+}
+
+
+.filters {
+    font-family: 'louis-cafe';
+    margin-top: 150px;
+    float: left;
+    width: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.filters h3 {
+    margin-bottom: 10px;
+}
+
+.filters h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.filters ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.filters li {
+    margin-bottom: 10px;
+}
+
+.catalog {
+    padding-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    font-family: 'louis-cafe';
+    width: 20%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.item img {
+    border-radius: 20px;
+    border: 1px solid rgb(255, 170, 12) ;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.item h3 {
+    margin-bottom: 10px;
+}
+
+.item button {
+    background-color: #f3ad45;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.status {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.open {
+    color: #4CAF50;
+}
+
+.closed {
+    color: #FF0000;
 }
