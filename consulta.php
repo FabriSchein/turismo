@@ -18,7 +18,7 @@ if (isset($_POST['bb']))
                 <h3 class="success"> Tu consulta fue registrada</h3>
                 <?php
         } 
-        else
+        else        
         {
             ?>
                 <h3 class="error">Ocurrio un error</h3>
