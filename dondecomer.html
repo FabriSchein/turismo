@@ -21,22 +21,124 @@
         </ul>       
     </div>
 
-    <div class="logo"><img src="./img/logo.png"></img></div>
-
 </header>
 
-<div class="container">
-        <div class="articulo">
-            <div class="imagen">
-                <img src="./img/restaurantes/paz.jpg"></img>
-            </div>
-            <div class="info">
-                <h1>Villa Paz</h1>
-                <h3>Restaurante</h3>    
-                <input type="button" href="https://www.tripadvisor.com.ar/Restaurants-g312774-Villa_Carlos_Paz_Province_of_Cordoba_Central_Argentina.html" values="Ver menu">
-            </div>
-        </div>
+<div clas="catalogo-com">
+
+<div class="filters">
+    <h3>Filtrar por:</h3>
+    <h4>Categorías:</h4>
+    <ul>
+        <li><input type="checkbox" id="filter-fast-food" onchange="filterItems()"> <label for="filter-fast-food">Comida rápida</label></li>
+        <li><input type="checkbox" id="filter-restaurant" onchange="filterItems()"> <label for="filter-restaurant">Restaurant</label></li>
+        <li><input type="checkbox" id="filter-foreign-food" onchange="filterItems()"> <label for="filter-foreign-food">Comida extranjera</label></li>
+        <li><input type="checkbox" id="filter-franchises" onchange="filterItems()"> <label for="filter-franchises">Franquicias</label></li>
+    </ul>
+    <h4>Ubicaciones:</h4>
+    <ul>
+        <li><input type="checkbox" id="filter-location-downtown" onchange="filterItems()"> <label for="filter-location-downtown">Centro</label></li>
+        <li><input type="checkbox" id="filter-location-surroundings" onchange="filterItems()"> <label for="filter-location-surroundings">Alrededores</label></li>
+        <li><input type="checkbox" id="filter-location-lake" onchange="filterItems()"> <label for="filter-location-lake">Cerca del lago</label></li>
+        <li><input type="checkbox" id="filter-location-route" onchange="filterItems()"> <label for="filter-location-route">Sobre la ruta</label></li>
+    </ul>
 </div>
+
+<div class="catalog">
+    <div class="item" data-categories="fast-food" data-locations="downtown">
+        <img src="./img/restaurantes/mc.jpg" alt="Artículo 1">
+        <h3>Mc Donald's</h3>
+        <p>3,5 estrellas - Gral. Paz</p>
+        <p>Comida para llevar, Asiento, Acceso para silla de ruedas, Asientos al aire libre, Sillitas altas disponibles, Wi-Fi gratis.</p>
+        <button onclick="location.href='enlace-articulo-1'">Sitio Web</button>
+        <div class="status open">ABIERTO</div>
+    </div>
+
+    <div class="item" data-categories="restaurant" data-locations="surroundings">
+        <img src="./img/restaurantes/pulperia.jpg" alt="Artículo 1">
+        <h3>La Pulperia</h3>
+        <p>4 estrellas - Av. Arturo Umberto Illia 675</p>
+        <p>Bar, Argentina, Sudamericana</p>
+        <div class="status open">ABIERTO</div>
+    </div>
+
+    <div class="item" data-categories="restaurant" data-locations="downtown">
+        <img src="./img/restaurantes/paz.jpg" alt="Artículo 1">
+        <h3>Villa Paz</h3>
+        <p>3,5 estrellas - Gral. Paz</p>
+        <p>Parrillada, Contemporánea, Argentina - Apto para vegetarianos, Opciones veganas - Almuerzo, Cena, Abierto hasta tarde</p>
+        <button onclick="location.href='enlace-articulo-1'">Sitio Web</button>
+        <div class="status open">ABIERTO</div>
+    </div>
+
+    <div class="item" data-categories="restaurant" data-locations="downtown">
+        <img src="./img/restaurantes/paz.jpg" alt="Artículo 1">
+        <h3>El Rincon de José</h3>
+        <p>4,5 estrellas - Las Salinas esq El Noga</p>
+        <p>Reservas, Servicio de mesa, Asientos al aire libre, Asiento, Estacionamiento disponible, Estacionamiento en la calle, Estacionamiento gratuito afuera en la calle, Televisión, Sillitas altas disponibles, Sirve alcohol, Vino y cerveza, Pagos digitales, Acepta tarjetas de crédito, Frente al agua, Patios de juegos, Estilo familiar</p>
+        <button onclick="location.href='enlace-articulo-1'">Sitio Web</button>
+        <div class="status open">ABIERTO</div>
+    </div>
+
+    <div class="item" data-categories="restaurant" data-locations="downtown">
+        <img src="./img/restaurantes/paz.jpg" alt="Artículo 1">
+        <h3>Villa Paz</h3>
+        <p>3,5 estrellas - Gral. Paz</p>
+        <p>Parrillada, Contemporánea, Argentina - Apto para vegetarianos, Opciones veganas - Almuerzo, Cena, Abierto hasta tarde</p>
+        <button onclick="location.href='enlace-articulo-1'">Sitio Web</button>
+        <div class="status open">ABIERTO</div>
+    </div>
+
+    <div class="item" data-categories="restaurant" data-locations="downtown">
+        <img src="./img/restaurantes/paz.jpg" alt="Artículo 1">
+        <h3>Villa Paz</h3>
+        <p>3,5 estrellas - Gral. Paz</p>
+        <p>Parrillada, Contemporánea, Argentina - Apto para vegetarianos, Opciones veganas - Almuerzo, Cena, Abierto hasta tarde</p>
+        <button onclick="location.href='enlace-articulo-1'">Sitio Web</button>
+        <div class="status open">ABIERTO</div>
+    </div>
+
+    <div class="item" data-categories="restaurant" data-locations="downtown">
+        <img src="./img/restaurantes/paz.jpg" alt="Artículo 1">
+        <h3>Villa Paz</h3>
+        <p>3,5 estrellas - Gral. Paz</p>
+        <p>Parrillada, Contemporánea, Argentina - Apto para vegetarianos, Opciones veganas - Almuerzo, Cena, Abierto hasta tarde</p>
+        <button onclick="location.href='enlace-articulo-1'">Sitio Web</button>
+        <div class="status open">ABIERTO</div>
+    </div>
+
+    <div class="item" data-categories="restaurant" data-locations="downtown">
+        <img src="./img/restaurantes/paz.jpg" alt="Artículo 1">
+        <h3>Villa Paz</h3>
+        <p>3,5 estrellas - Gral. Paz</p>
+        <p>Parrillada, Contemporánea, Argentina - Apto para vegetarianos, Opciones veganas - Almuerzo, Cena, Abierto hasta tarde</p>
+        <button onclick="location.href='enlace-articulo-1'">Sitio Web</button>
+        <div class="status open">ABIERTO</div>
+    </div>
+
+    <div class="item" data-categories="restaurant" data-locations="downtown">
+        <img src="./img/restaurantes/paz.jpg" alt="Artículo 1">
+        <h3>Villa Paz</h3>
+        <p>3,5 estrellas - Gral. Paz</p>
+        <p>Parrillada, Contemporánea, Argentina - Apto para vegetarianos, Opciones veganas - Almuerzo, Cena, Abierto hasta tarde</p>
+        <button onclick="location.href='enlace-articulo-1'">Sitio Web</button>
+        <div class="status open">ABIERTO</div>
+    </div>
+
+    <div class="item" data-categories="restaurant" data-locations="downtown">
+        <img src="./img/restaurantes/paz.jpg" alt="Artículo 1">
+        <h3>Villa Paz</h3>
+        <p>3,5 estrellas - Gral. Paz</p>
+        <p>Parrillada, Contemporánea, Argentina - Apto para vegetarianos, Opciones veganas - Almuerzo, Cena, Abierto hasta tarde</p>
+        <button onclick="location.href='enlace-articulo-1'">Sitio Web</button>
+        <div class="status open">ABIERTO</div>
+    </div>
+
+    
+    <!-- Acá agreguen más artículos siguiendo el mismo formato, solamente copien y peguen desde el <div class="item"> hasta el div que cierra abajo
+        de ahi cambien con la info de cada restaurant-->
+</div>
+</div>
+<script src="./js/script.js"></script>
 
     </div>
 </body>
