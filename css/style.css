@@ -328,7 +328,11 @@ h3{
 
 .menu-2{
     margin-top: 200px;
+<<<<<<< HEAD
+    text-align: center;     
+=======
     text-align: center;
+>>>>>>> d8f1a2747f514fb8dd65047b5c7cc3bd0ba6f8b0
 }
 
 .menu-2 img{
@@ -349,3 +353,5 @@ h3{
 .menu-2 h3{
     position: absolute;
 }
+
+

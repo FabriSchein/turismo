@@ -10,7 +10,7 @@ if (isset($_POST['bb']))
         $telefono = trim($_POST['telefono']);
         $motivo = trim($_POST['motivo']);
         $duda = trim($_POST['consulta']);
-        $consulta = "INSERT INTO USUARIO (NOMBRE, MOTIVO_DE_CONSULTA, CONSULTA, NUMERO_DE_TELEFONO) VALUES ('$nombre', '$telefono', '$motivo', '$duda')";
+        $consulta = "INSERT INTO USUARIO (NOMBRE, NUMERO_DE_TELEFONO, MOTIVO_DE_CONSULTA, CONSULTA) VALUES ('$nombre', '$telefono', '$motivo', '$duda')";
         $resultado = mysqli_query($conex, $consulta);
         if ($resultado) 
         {

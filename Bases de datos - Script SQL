@@ -1,0 +1,61 @@
+DROP DATABASE IF EXISTS TURISMO;
+CREATE DATABASE IF NOT EXISTS TURISMO; 
+USE TURISMO;
+CREATE TABLE LOCALIDAD
+(
+    NOMBRE VARCHAR (50),
+    ID_LOCALIDAD INT AUTO_INCREMENT,
+    NUMERO_DE_TELEFONO INT,
+    PRIMARY KEY (ID_LOCALIDAD)
+);
+CREATE TABLE USUARIO 
+(
+    NOMBRE VARCHAR (50),
+    MOTIVO_DE_CONSULTA VARCHAR (50),
+    CONSULTA VARCHAR (200),
+    NUMERO_DE_TELEFONO INT,
+    ID_LOCALIDAD INT,
+    ID_USUARIO INT AUTO_INCREMENT,
+    PRIMARY KEY (ID_USUARIO),
+    FOREIGN KEY (ID_LOCALIDAD) REFERENCES LOCALIDAD (ID_LOCALIDAD)
+);
+CREATE TABLE TIPO_DE_LUGARES 
+(
+    NOMBRE VARCHAR (50),
+    ID_TIPO INT AUTO_INCREMENT,
+    PRIMARY KEY (ID_TIPO)
+);
+CREATE TABLE LUGARES
+(
+    NOMBRE VARCHAR (50),
+    UBICACION VARCHAR (50),
+    PUNTAJE INT,
+    DESCRIPCION VARCHAR (200),
+    IMAGEN VARCHAR (200), 
+    ID_TIPO INT,
+    ID_LUGARES INT AUTO_INCREMENT,
+    ID_LOCALIDAD INT,
+    PRIMARY KEY (ID_LUGARES),
+    FOREIGN KEY (ID_TIPO) REFERENCES TIPO_DE_LUGARES (ID_TIPO), 
+    FOREIGN KEY (ID_LOCALIDAD) REFERENCES LOCALIDAD (ID_LOCALIDAD)
+);
+
+INSERT INTO LOCALIDAD (NOMBRE, NUMERO_DE_TELEFONO)  VALUES ("Villa Carlos Paz", 08008008), ("Bialet Masse", 05205000), ("Cosquin", 02585200), ("Tanti", 2505003) , ("Siquiman", 0357041) , ("San  Francisco", 3550000) , ("Alta Gracia", 010101000);
+
+INSERT INTO USUARIO (NOMBRE, MOTIVO_DE_CONSULTA, CONSULTA, NUMERO_DE_TELEFONO, ID_LOCALIDAD) 
+VALUES ("Maxi", "Salud", "Quisiera saber la ubicacion de los hospitales", 344125852, 1), 
+("Simon", "Gastronomia", "Quisiera saber cuanto sale un menu", 3655000, 1),
+("Fabricio", "Alojamientos", "Quisiera saber el valor de una habitacion", 26500202, 1), 
+("Facu", "Lago", "Quisiera saber si el lago sigue sucio", 2505120, 1), 
+("Juan", "Salud", "Quisiera saber si hay muchas enfermedades alla", 03541252, 1), 
+("Marco", "Diversion", "Quisiera saber el horario de New York", 5250420230, 1);
+
+INSERT INTO TIPO_DE_LUGARES (NOMBRE)  VALUES ("Gastronomia"), ("Alojamientos "), ("Salud"), ("Entretenimientos"),("Paseos"), ("Relajamiento");
+
+INSERT INTO LUGARES (NOMBRE, UBICACION, PUNTAJE, DESCRIPCION, ID_LOCALIDAD, IMAGEN, ID_TIPO) VALUES 
+("Tifossi", "AV Carcano", 9, "Lugar antiguo de la ciudad",1,"Restaurantes.JPG", 1), 
+("Rock me beer", "AV Carcano y julio", 8, "Lugar nuevo de la ciudad",1,"ROCK.JPG", 1), 
+("MILO", "AV San Martin", 9, "Lugar cercano a la terminal de la ciudad",1,"MILO.JPG", 1), 
+("NEW YORK", "Cipoletti", 10, "El lugar de videojuegos mas popular de la ciudad",1,"NEW.JPG", 4), 
+("Grido", "Canada y cortazar", 9, "Heladeria con mas de cuatro locales en ellea",1,"GRIDO.JPG", 1),
+("Hotel el Mirador", "Zapiola y castelli", 7, "Hotel de la ciudad con una decoracion vintage",1,"HOTEL.JPG", 2);s
