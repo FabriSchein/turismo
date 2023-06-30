@@ -13,7 +13,7 @@
         <div class="menu"> 
         <ul>
             <li><a href="./index.html">INICIO</li>
-            <li><a href="./actividades.html">QUÉ VISITAR</a></li>
+            <li><a href="./quevisitar.html">QUÉ VISITAR</a></li>
             <li><a href="./dondealojarse.html">DÓNDE ALOJARSE</a></li>
             <li><a href="./dondecomer.html">DÓNDE COMER</a></li>
             <li><a href="./historia.html">HISTORIA</a></li>
@@ -23,21 +23,6 @@
 
 </header>
 
-<<<<<<< HEAD
-<div class="container">
-        <div class="articulo">
-            <div class="imagen">
-                <img src="./img/restaurantes/paz.jpg"></img>
-            </div>
-            <div class="info">
-                <h1>Villa Paz</h1>
-                <h3>Restaurante</h3>    
-                <input type="button" href="https://www.tripadvisor.com.ar/Restaurants-g312774-Villa_Carlos_Paz_Province_of_Cordoba_Central_Argentina.html" values="Ver menu">
-            </div>
-        </div>
-=======
-<div clas="catalogo-com">
-
 <div class="filters">
     <h3>Filtrar por:</h3>
     <h4>Categorías:</h4>
@@ -46,6 +31,7 @@
         <li><input type="checkbox" id="filter-restaurant" onchange="filterItems()"> <label for="filter-restaurant">Restaurant</label></li>
         <li><input type="checkbox" id="filter-foreign-food" onchange="filterItems()"> <label for="filter-foreign-food">Comida extranjera</label></li>
         <li><input type="checkbox" id="filter-franchises" onchange="filterItems()"> <label for="filter-franchises">Franquicias</label></li>
+        <li><input type="checkbox" id="filter-icecream" onchange="filterItems()"> <label for="filter-icecram">Heladeria</label></li>
     </ul>
     <h4>Ubicaciones:</h4>
     <ul>
@@ -62,7 +48,17 @@
         <h3>Mc Donald's</h3>
         <p>3,5 estrellas - Gral. Paz</p>
         <p>Comida para llevar, Asiento, Acceso para silla de ruedas, Asientos al aire libre, Sillitas altas disponibles, Wi-Fi gratis.</p>
-        <button onclick="location.href='enlace-articulo-1'">Sitio Web</button>
+        <button onclick="location.href='https://www.mcdonalds.com.ar/'">Sitio Web</button>
+        <div class="status open">ABIERTO</div>
+    </div>
+
+    <div class="item" data-categories="fast-food" data-locations="downtown">
+        <img src="./img/restaurantes/mostaza.jpg" alt="Artículo 1">
+        <h3>Mostaza</h3>
+        <p>4 estrellas - 9 de Julio</p>
+        <p>Comida para llevar, Asiento, Acceso para silla de ruedas, 
+            Entrega sin contacto, Baños, Asientos al aire libre, Sillitas altas disponibles, Wi-Fi gratis.</p>
+        <button onclick="location.href='https://www.mostazaweb.com.ar/'">Sitio Web</button>
         <div class="status open">ABIERTO</div>
     </div>
 
@@ -70,7 +66,8 @@
         <img src="./img/restaurantes/pulperia.jpg" alt="Artículo 1">
         <h3>La Pulperia</h3>
         <p>4 estrellas - Av. Arturo Umberto Illia 675</p>
-        <p>Bar, Argentina, Sudamericana</p>
+        <p>Bar, Argentina, Sudamericana - Consumo en el lugar · Para llevar · No ofrece servicio de entrega a domicilio</p>
+        <button onclick="location.href='https://www.instagram.com/lapulperiavcp/?hl=es'">Sitio Web</button>
         <div class="status open">ABIERTO</div>
     </div>
 
@@ -79,72 +76,72 @@
         <h3>Villa Paz</h3>
         <p>4 estrellas - Gral. Paz</p>
         <p>Parrillada, Contemporánea, Argentina - Apto para vegetarianos, Opciones veganas - Almuerzo, Cena, Abierto hasta tarde</p>
-        <button onclick="location.href='enlace-articulo-1'">Sitio Web</button>
+        <button onclick="location.href='https://villapaz.com.ar/'">Sitio Web</button>
         <div class="status open">ABIERTO</div>
     </div>
 
     <div class="item" data-categories="restaurant" data-locations="downtown">
-        <img src="./img/restaurantes/paz.jpg" alt="Artículo 1">
-        <h3>El Rincon de José</h3>
+        <img src="./img/restaurantes/rincon.jpg" alt="Artículo 1">
+        <h3>El Rincon de José Luis</h3>
         <p>4,5 estrellas - Las Salinas esq El Noga</p>
-        <p>Reservas, Servicio de mesa, Asientos al aire libre, Asiento, Estacionamiento disponible, Estacionamiento en la calle, Estacionamiento gratuito afuera en la calle, Televisión, Sillitas altas disponibles, Sirve alcohol, Vino y cerveza, Pagos digitales, Acepta tarjetas de crédito, Frente al agua, Patios de juegos, Estilo familiar</p>
-        <button onclick="location.href='enlace-articulo-1'">Sitio Web</button>
+        <p>Reservas, Asientos al aire libre, Estacionamiento disponible, Sirve alcohol, Vino y cerveza, Frente al agua, Patios de juegos, Estilo familiar</p>
+        <button onclick="location.href='https://elrincondejoseluis.com.ar/'">Sitio Web</button>
         <div class="status open">ABIERTO</div>
     </div>
 
     <div class="item" data-categories="restaurant" data-locations="downtown">
-        <img src="./img/restaurantes/paz.jpg" alt="Artículo 1">
+        <img src="./img/restaurantes/parrillalago.jpg" alt="Artículo 1">
         <h3>La Parrilla del Lago</h3>
         <p>3,5 estrellas - Avenue Illia 1050</p>
         <p>Argentina, Parrillada, Almuerzo, Cena, Abierto hasta tarde</p>
-        <button onclick="location.href='enlace-articulo-1'">Sitio Web</button>
+        <button onclick="location.href='http://parrilladellago.com.ar/'">Sitio Web</button>
         <div class="status open">ABIERTO</div>
     </div>
 
     <div class="item" data-categories="restaurant" data-locations="downtown">
-        <img src="./img/restaurantes/paz.jpg" alt="Artículo 1">
+        <img src="./img/restaurantes/ambrogio.jpg" alt="Artículo 1">
         <h3>Ambrogio</h3>
         <p>4,5 estrellas - Boulevard Sarmiento 1093 Barrio Villa del Lago</p>
         <p> Apto para vegetarianos, opciones sin gluten, almuerzo, cena, bebidas
 </p>
-        <button onclick="location.href='enlace-articulo-1'">Sitio Web</button>
+        <button onclick="location.href='https://www.instagram.com/ambrogiorestaurante/?hl=es'">Sitio Web</button>
         <div class="status open">ABIERTO</div>
     </div>
 
     <div class="item" data-categories="restaurant" data-locations="downtown">
-        <img src="./img/restaurantes/paz.jpg" alt="Artículo 1">
+        <img src="./img/restaurantes/churrasco.jpg" alt="Artículo 1">
         <h3>La Churrasquita</h3>
         <p>4 estrellas - Avenida Sabattini 109</p>
         <p>Churrasquería, parrillada, Argentina, parrilla apto para vegetarianos, opciones sin gluten, almuerzo, cena
 </p>
-        <button onclick="location.href='enlace-articulo-1'">Sitio Web</button>
+        <button onclick="location.href='https://www.instagram.com/lachurrasquita/?hl=es'">Sitio Web</button>
         <div class="status open">ABIERTO</div>
     </div>
 
     <div class="item" data-categories="restaurant" data-locations="downtown">
-        <img src="./img/restaurantes/paz.jpg" alt="Artículo 1">
+        <img src="./img/restaurantes/oaxaca.jpg" alt="Artículo 1">
         <h3>Oaxaca</h3>
         <p>4 estrellas - Calle Uruguay 493</p>
         <p> Mexicana, Bar, Pub, Centroamericana, apto para vegetarianos, almuerzo, cena </p>
-        <button onclick="location.href='enlace-articulo-1'">Sitio Web</button>
+        <button onclick="location.href='https://oaxaca.com.ar/'">Sitio Web</button>
         <div class="status open">ABIERTO</div>
     </div>
 
-    <div class="item" data-categories="restaurant" data-locations="downtown">
-        <img src="./img/restaurantes/paz.jpg" alt="Artículo 1">
-        <h3>Heladeria Venecia</h3>
+    <div class="item" data-categories="icecream" data-locations="downtown">
+        <img src="./img/restaurantes/venezia.jpg" alt="Artículo 1">
+        <h3>Heladeria Venezia</h3>
         <p>3,5 estrellas - Av. Ramón J. Cárcano 852</p>
         <p>Comida para llevar, Asiento, Acceso para silla de ruedas</p>
-        <button onclick="location.href='enlace-articulo-1'">Sitio Web</button>
+        <button onclick="location.href='https://heladeriavenezia.com.ar/'">Sitio Web</button>
         <div class="status open">ABIERTO</div>
     </div>
 
-    <div class="item" data-categories="restaurant" data-locations="downtown">
-        <img src="./img/restaurantes/paz.jpg" alt="Artículo 1">
+    <div class="item" data-categories="icecream" data-locations="downtown">
+        <img src="./img/restaurantes/bambino.jpg" alt="Artículo 1">
         <h3>Heladeria Bambino</h3>
         <p>4,5 estrellas - Calle San Martin 917 </p>
         <p>Asiento, Acceso para silla de ruedas</p>
-        <button onclick="location.href='enlace-articulo-1'">Sitio Web</button>
+        <button onclick="location.href='https://www.instagram.com/heladeriabambino/?hl=es'">Sitio Web</button>
         <div class="status open">ABIERTO</div>
     </div>
 </div>

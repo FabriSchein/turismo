@@ -54,8 +54,8 @@
 header{
     display: flex;
     justify-content: space-between;
-    padding-bottom: 50px;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.0));
+    padding-bottom: 30px;
+    background: linear-gradient(rgb(172, 238, 255), rgb(172, 238, 255));
     position: fixed;
     top: 0;
     left: 0;
@@ -66,7 +66,7 @@ header{
 
 a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 
@@ -74,7 +74,6 @@ header.abajo{
 
     padding-top: 3px;
     padding-bottom: 20px;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.0));
 }
 
 .menu ul{
@@ -83,7 +82,7 @@ header.abajo{
 }
 
 .menu ul li{
-    color: white;
+    color: black;
     margin-top: 34px;
     font-family: 'louis-cafe';
     margin-right: 40px;
@@ -101,26 +100,42 @@ header.abajo{
     
 }
 
-.histo{
-    margin-top: 100px;
-    justify-content: center;
-}
+
 
 body{
     background-color: #FF9100 ;
 }
 
+.container-fluid{
+    margin-top: 150px;
+}
+
 h1{
     font-family: 'louis-cafe';
     text-align: center;
-    margin-top: 200px;
-    font-size: 60px;
+    font-size: 200px;
 }
 
-h3{
-    font-family: 'louis-cafe';
-    text-align: center;
-    margin-top: 50px;
-    font-size: 25px;
+.row{
+    font-family: 'louis-cafe'; 
     
 }
+
+body {
+    text-align: center;
+  }
+
+p{
+    font-size: 25px;
+    text-align: center;
+}
+  .text-orange {
+    font-size: 40px;
+    margin-top: 180px;  
+    margin-bottom: 110px;
+    color: black;
+  }
+  
+  
+
+  
